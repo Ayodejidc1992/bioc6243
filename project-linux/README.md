@@ -89,7 +89,6 @@ echo "world" >> file.txt Appends the text world to the end of file.txt. >> means
 cat file.txt | grep "hello": cat file.txt prints the contents of the file. | (pipe) sends output to the next command. grep "hello" filters and prints only lines containing hello Output: hello
 ls | grep ".txt": ls lists all files in the directory. grep ".txt" filters the list to show only files ending with .txt
 
-
 cd ~/mybioc6243/project-linux: Moves into the project directory.
 ls -l: Lists files in long format, showing permissions, owner, size, and modification time.
 chmod 755 file.txt: Changes the permissions of file.txt.
