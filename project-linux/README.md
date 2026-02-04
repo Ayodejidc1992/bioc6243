@@ -11,7 +11,7 @@ $ cd ..
 $ cd ~
 ```
 The first command does xyz, and the seconn ...
-
+-----
 $ mkdir ~/mybioc6243
 $ mkdir ~/mybioc6243/project-linux
 $ cd ~/mybioc6243/project-linux
@@ -22,7 +22,7 @@ $ ls -ltr
 $ mv file_copy.txt /tmp/
 $ rm /tmp/file_copy.txt
 $ rm -r ~/mybioc6243
-
+-----
 $ cd ~/mybioc6243/project-linux
 $ cp /groups/bioc6243_0/data/fastq/toy.fastq .
 $ ls -ltr
