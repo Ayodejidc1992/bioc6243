@@ -1,4 +1,20 @@
-Commands
+### Working with files and directories
+```
+$ pwd
+$ mkdir ~/mybioc6243
+$ mkdir ~/mybioc6243/project-linux
+$ cd ~/mybioc6243/project-linux
+$ touch file.txt
+$ ls -ltr
+$ cp file.txt file_copy.txt
+$ ls -ltr
+$ mv file_copy.txt /tmp/
+$ rm /tmp/file_copy.txt
+$ rm -r ~/mybioc6243
+```
+The first command (pwd) gives the current location, fdfasfafa
+
+
 -----
 $ whoami
 $ pwd
@@ -12,6 +28,7 @@ $ cd ~
 ```
 The first command does xyz, and the seconn ...
 -----
+$ pwd
 $ mkdir ~/mybioc6243
 $ mkdir ~/mybioc6243/project-linux
 $ cd ~/mybioc6243/project-linux
