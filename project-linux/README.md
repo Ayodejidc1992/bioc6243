@@ -14,8 +14,22 @@ $ rm -r ~/mybioc6243
 ```
 The first command (pwd) gives the current location, fdfasfafa
 
+### Viewing and editing text files
+```
+$ cd ~/mybioc6243/project-linux
+$ cp /groups/bioc6243_0/data/fastq/toy.fastq .
+$ ls -ltr
+$ cat toy.fastq
+$ less toy.fastq
+$ head -20 toy.fastq
+$ tail -20 toy.fastq
+$ ls -ltr
+$ nano file.txt**
+---
+fasfasfafa
 
------
+
+
 $ whoami
 $ pwd
 $ hostname
