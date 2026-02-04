@@ -1,13 +1,13 @@
 Commands
-○ $ whoami
-○ $ pwd
-○ $ hostname
-○ $ ls
-○ $ ls -l
-○ $ ls -a
-○ $ cd
-○ $ cd .. 
-○ $ cd ~
+$ whoami
+$ pwd
+$ hostname
+$ ls
+$ ls -l
+$ ls -a
+$ cd
+$ cd .. 
+$ cd ~
 
 $ mkdir ~/mybioc6243
 $ mkdir ~/mybioc6243/project-linux
