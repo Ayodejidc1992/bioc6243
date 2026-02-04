@@ -1,5 +1,5 @@
-
-```
+Commands
+-----
 $ whoami
 $ pwd
 $ hostname
@@ -11,9 +11,6 @@ $ cd ..
 $ cd ~
 ```
 The first command does xyz, and the seconn ...
-
-
-
 
 $ mkdir ~/mybioc6243
 $ mkdir ~/mybioc6243/project-linux
