@@ -70,7 +70,7 @@ tail -20 toy.fastq displays the last 20 lines of the file.
 Why this matters confirms the file ends properly and is not truncated.
 ls -ltr Lists files again to verify file timestamps and contents.
 nano file.txt opens the nano text editor to create or edit file.txt. Ctrl + O → save, Press Enter to confirm
-```
+
 ### Searching Pipes & Redirection
 ```
 $ cd ~/mybioc6243/project-linux
