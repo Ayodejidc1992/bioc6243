@@ -49,7 +49,7 @@ mv file_copy.txt /tmp/ Moves file_copy.txt from the current directory to /tmp. T
 rm /tmp/file_copy.txt Permanently deletes file_copy.txt. The file is gone forever.	There is no undo option
 rm -r ~/mybioc6243 -r means recursive. Deletes:	the directory mybioc6243, all subdirectories,	all files inside
 
-### Viewing and editing text files
+### Viewing and editing text files`
 ```
 $ cd ~/mybioc6243/project-linux
 $ cp /groups/bioc6243_0/data/fastq/toy.fastq .
@@ -68,10 +68,8 @@ less toy.fastq opens the file in an interactive viewer. Scroll up/down
 head -20 toy.fastq displays the first 20 lines of the file.
 tail -20 toy.fastq displays the last 20 lines of the file.
 Why this matters confirms the file ends properly and is not truncated.
-ls -ltr
-Lists files again to verify file timestamps and contents.
-nano file.txt opens the nano text editor to create or edit file.txt. Ctrl + O → save, Press Enter to confirm, Ctrl + X → exit
-The first command does xyz, and the seconn ...
+ls -ltr Lists files again to verify file timestamps and contents.
+nano file.txt opens the nano text editor to create or edit file.txt. Ctrl + O → save, Press Enter to confirm
 
 ### Searching, Pipes & Redirection
 ```
@@ -83,13 +81,14 @@ $ echo "world" >> file.txt
 $ cat file.txt | grep "hello"
 $ ls | grep ".txt"
 ```
-the first command (cd ~/mybioc6243/project-linux) Moves into the directory project-linux. All subsequent commands act on files in this directory.
+The first command (cd ~/mybioc6243/project-linux) Moves into the directory project-linux. All subsequent commands act on files in this directory.
 grep "mistake" file.txt: Searches for the exact word mistake in file.txt. Prints any line that contains mistake. 
 grep -i "gene" file.txt: Searches for the word gene, ignoring case. Matches: gene, Gene, GENE Prints all matching lines
 echo "hello" > file.txt: Writes the text hello into file.txt. > overwrites the file Any previous content in file.txt is erased
 echo "world" >> file.txt Appends the text world to the end of file.txt. >> means append. Does not erase existing content after these two commands, file.txt contains: hello world
 cat file.txt | grep "hello": cat file.txt prints the contents of the file. | (pipe) sends output to the next command. grep "hello" filters and prints only lines containing hello Output: hello
 ls | grep ".txt": ls lists all files in the directory. grep ".txt" filters the list to show only files ending with .txt
+
 ### Permissions & Processes
 ```
 $ cd ~/mybioc6243/project-linux
