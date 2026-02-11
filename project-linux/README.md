@@ -59,7 +59,7 @@ $ less toy.fastq
 $ head -20 toy.fastq
 $ tail -20 toy.fastq
 $ ls -ltr
-$ nano file.txt**
+$ nano file.txt
 ---
 The first code (cd ~/mybioc6243/project-linux) Moves into the project directory where files will be stored and inspected.
 cp /groups/bioc6243_0/data/fastq/toy.fastq. copies the FASTQ file toy.fastq into the current directory(~/mybioc6243/project-linux)	.means current directory and keeps a local copy for inspection
@@ -98,7 +98,7 @@ $ chmod 755 file.txt
 $ ps
 $ top
 $ htop
-Ctrl + C:
+Ctrl + C
 ```
 The funtions of all the commands are listed bellow;
 cd ~/mybioc6243/project-linux: Moves into the project directory.
