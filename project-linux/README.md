@@ -60,8 +60,7 @@ $ head -20 toy.fastq
 $ tail -20 toy.fastq
 $ ls -ltr
 $ nano file.txt
----
-
+```
 The first code (cd ~/mybioc6243/project-linux) Moves into the project directory where files will be stored and inspected.
 cp /groups/bioc6243_0/data/fastq/toy.fastq. copies the FASTQ file toy.fastq into the current directory(~/mybioc6243/project-linux)	.means current directory and keeps a local copy for inspection
 cat toy.fastq Prints the entire contents of the FASTQ file to the terminal. Only suitable for very small files. Not recommended for large FASTQ files
