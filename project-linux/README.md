@@ -88,7 +88,6 @@ echo "hello" > file.txt: Writes the text hello into file.txt. > overwrites the f
 echo "world" >> file.txt Appends the text world to the end of file.txt. >> means append. Does not erase existing content after these two commands, file.txt contains: hello world
 cat file.txt | grep "hello": cat file.txt prints the contents of the file. | (pipe) sends output to the next command. grep "hello" filters and prints only lines containing hello Output: hello
 ls | grep ".txt": ls lists all files in the directory. grep ".txt" filters the list to show only files ending with .txt
-
 ### Permissions & Processes
 ```
 $ cd ~/mybioc6243/project-linux
