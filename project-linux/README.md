@@ -33,7 +33,7 @@ $ ls -ltr
 $ mv file_copy.txt /tmp/
 $ rm /tmp/file_copy.txt
 $ rm -r ~/mybioc6243
-```
+
 The first command (pwd) gives the current location, fdfasfafa
 pwd stands for print working directory.
 mkdir ~/mybioc6243 creates a new directory named mybioc6243 inside my home directory
