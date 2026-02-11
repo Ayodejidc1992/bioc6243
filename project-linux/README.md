@@ -33,7 +33,7 @@ $ ls -ltr
 $ mv file_copy.txt /tmp/
 $ rm /tmp/file_copy.txt
 $ rm -r ~/mybioc6243
-
+```
 The first command (pwd) gives the current location, fdfasfafa
 pwd stands for print working directory.
 mkdir ~/mybioc6243 creates a new directory named mybioc6243 inside my home directory
@@ -61,7 +61,7 @@ $ tail -20 toy.fastq
 $ ls -ltr
 $ nano file.txt**
 ---
-the first code (cd ~/mybioc6243/project-linux) Moves into the project directory where files will be stored and inspected.
+The first code (cd ~/mybioc6243/project-linux) Moves into the project directory where files will be stored and inspected.
 cp /groups/bioc6243_0/data/fastq/toy.fastq. copies the FASTQ file toy.fastq into the current directory(~/mybioc6243/project-linux)	.means current directory and keeps a local copy for inspection
 cat toy.fastq Prints the entire contents of the FASTQ file to the terminal. Only suitable for very small files. Not recommended for large FASTQ files
 less toy.fastq opens the file in an interactive viewer. Scroll up/down
@@ -76,24 +76,22 @@ The first command does xyz, and the seconn ...
 ### Searching, Pipes & Redirection
 ```
 $ cd ~/mybioc6243/project-linux
-$ cp /groups/bioc6243_0/data/fastq/toy.fastq .
-$ ls -ltr
-$ cat toy.fastq
-$ less toy.fastq
-$ head -20 toy.fastq
-$ tail -20 toy.fastq
-$ ls -ltr
-$ nano file.txt
-```
-
-$ cd ~/mybioc6243/project-linux
 $ grep "mistake" file.txt
 $ grep -i "gene" file.txt
 $ echo "hello" > file.txt
 $ echo "world" >> file.txt
 $ cat file.txt | grep "hello"
 $ ls | grep ".txt"
-
+```
+the first command (cd ~/mybioc6243/project-linux) Moves into the directory project-linux. All subsequent commands act on files in this directory.
+grep "mistake" file.txt: Searches for the exact word mistake in file.txt. Prints any line that contains mistake. 
+grep -i "gene" file.txt: Searches for the word gene, ignoring case. Matches: gene, Gene, GENE Prints all matching lines
+echo "hello" > file.txt: Writes the text hello into file.txt. > overwrites the file Any previous content in file.txt is erased
+echo "world" >> file.txt Appends the text world to the end of file.txt. >> means append. Does not erase existing content after these two commands, file.txt contains: hello world
+cat file.txt | grep "hello": cat file.txt prints the contents of the file. | (pipe) sends output to the next command. grep "hello" filters and prints only lines containing hello Output: hello
+ls | grep ".txt": ls lists all files in the directory. grep ".txt" filters the list to show only files ending with .txt
+### Permissions & Processes
+```
 $ cd ~/mybioc6243/project-linux
 $ ls -l
 $ chmod 755 file.txt
@@ -101,21 +99,8 @@ $ ps
 $ top
 $ htop
 Ctrl + C:
-
+```
 The funtions of all the commands are listed bellow;
-
-
-
-
-
-cd ~/mybioc6243/project-linux: Moves into the directory project-linux. All subsequent commands act on files in this directory.
-grep "mistake" file.txt: Searches for the exact word mistake in file.txt. Prints any line that contains mistake. 
-grep -i "gene" file.txt: Searches for the word gene, ignoring case. Matches: gene, Gene, GENE Prints all matching lines
-echo "hello" > file.txt: Writes the text hello into file.txt. > overwrites the file Any previous content in file.txt is erased
-echo "world" >> file.txt Appends the text world to the end of file.txt. >> means append. Does not erase existing content after these two commands, file.txt contains: hello world
-cat file.txt | grep "hello": cat file.txt prints the contents of the file. | (pipe) sends output to the next command. grep "hello" filters and prints only lines containing hello Output: hello
-ls | grep ".txt": ls lists all files in the directory. grep ".txt" filters the list to show only files ending with .txt
-
 cd ~/mybioc6243/project-linux: Moves into the project directory.
 ls -l: Lists files in long format, showing permissions, owner, size, and modification time.
 chmod 755 file.txt: Changes the permissions of file.txt.
