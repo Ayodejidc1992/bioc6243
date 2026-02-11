@@ -70,8 +70,8 @@ tail -20 toy.fastq displays the last 20 lines of the file.
 Why this matters confirms the file ends properly and is not truncated.
 ls -ltr Lists files again to verify file timestamps and contents.
 nano file.txt opens the nano text editor to create or edit file.txt. Ctrl + O → save, Press Enter to confirm
-
-### Searching, Pipes & Redirection
+```
+### Searching Pipes & Redirection
 ```
 $ cd ~/mybioc6243/project-linux
 $ grep "mistake" file.txt
@@ -88,6 +88,7 @@ echo "hello" > file.txt: Writes the text hello into file.txt. > overwrites the f
 echo "world" >> file.txt Appends the text world to the end of file.txt. >> means append. Does not erase existing content after these two commands, file.txt contains: hello world
 cat file.txt | grep "hello": cat file.txt prints the contents of the file. | (pipe) sends output to the next command. grep "hello" filters and prints only lines containing hello Output: hello
 ls | grep ".txt": ls lists all files in the directory. grep ".txt" filters the list to show only files ending with .txt
+
 ### Permissions & Processes
 ```
 $ cd ~/mybioc6243/project-linux
@@ -110,4 +111,3 @@ Ps: Displays currently running processes in the current terminal session.
 top: Shows real-time system activity including CPU and memory usage.
 htop: An enhanced and more user-friendly version of top (may not be installed on all systems).
 Ctrl + C: Stops a running process or exits commands like top or htop.
-
